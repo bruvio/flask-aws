@@ -84,10 +84,10 @@ def home():
 
 if __name__ == "__main__":
     db.init_app(application)
-    # application.run(host='0.0.0.0', port=80)
+    application.run(host='0.0.0.0', port=80)
     
     # application.run(port=3000, debug=True)  # enable debug
-    application.run()
+    #application.run()
 # if __name__ == "__main__":
 #     ############# Add these lines #############
 #     import xmlrunner
