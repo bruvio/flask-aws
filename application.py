@@ -80,7 +80,7 @@ def home():
     return "Hello, world!"
 
 db.init_app(application)
-application.run()
+application.run(host='0.0.0.0',port=80)
 
 
 if __name__ == "__main__":
