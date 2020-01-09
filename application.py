@@ -79,12 +79,13 @@ api.add_resource(
 def home():
     return "Hello, world!"
 
-
+db.init_app(application)
+application.run()
 
 
 if __name__ == "__main__":
     db.init_app(application)
-    application.run(host='0.0.0.0', port=80)
+    application.run(port=80)
     
     # application.run(port=3000, debug=True)  # enable debug
     #application.run()
